@@ -1,0 +1,156 @@
+#logo .image{
+    border-radius: 100%;
+    height: 116px;
+    width: 117px;
+    background-color: transparent;
+}
+#logo:hover .image{
+  cursor: pointer;
+}
+nav{
+    display: flex;
+    background-color:#020917;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem ;
+    height: 128px;
+    box-shadow: white;
+    box-shadow: 0 2px 4px rgb(253, 253, 253);
+   
+
+}
+.donate{
+    height: 44px;
+    width: 121px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.donate {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: black;
+  background:#FBF5E9;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.donate:before {
+  content: '';
+  background: linear-gradient(45deg, #5dfa03, #3ba804, #025f05, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.donate:active {
+  color: #FBF5E9;
+}
+
+.donate:active:after {
+  background: transparent;
+}
+
+.donate:hover:before {
+  opacity: 1;
+}
+
+.donate:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FBF5E9;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    margin: 0 1rem;
+    
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav a:hover{
+    color: #ccc;
+    
+}
+a {
+    color: #a0a0a0;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+   nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: yellowgreen;
+    transition: 0.5s linear;
+  }
+nav a:hover {
+    /* color: #fff; */
+  }
+  nav a:hover:after {
+    width: 100%;
+  }
+  .body{
+    height: 100%;
+    background-color: #020917;
+   
+  }
+  .bg-image{
+    background-size: cover;
+  }
+  .text
+  {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    line-height: 3.2rem;
+    font-size: 117%;
+    margin-left: 136px;
+  }
+  .left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .right{
+    flex: 1;
+  }
+
+  

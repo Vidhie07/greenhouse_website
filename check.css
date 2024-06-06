@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #FBF5E9;
+}
+
+nav {
+    display: flex;
+    background-color: #FBF5E9;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: auto; /* Change height to auto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#logo .image {
+    border-radius: 100%;
+    height: auto; /* Change height to auto */
+    width: 117px;
+    background-color: transparent;
+}
+
+.donate {
+    width: auto; /* Change width to auto */
+    height: 44px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+a {
+    color: #a0a0a0;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: yellowgreen;
+    transition: 0.5s linear;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.hero-section {
+    margin: 12px;
+    height: auto; /* Change height to auto */
+}
+
+.tree {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Allow image to adjust its height */
+    object-fit: cover;
+}
+
+#blank-box {
+    height: auto; /* Change height to auto */
+    background-color: #FBF5E9;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center; /* Center text */
+    margin-top: 20px; /* Add some margin for spacing */
+}
+
+#blank-box .blank {
+    font-size: 2.5em; /* Adjust font size */
+}
+
+.treespara {
+    padding: 20px; /* Add some padding */
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.secondDiv {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: center; /* Center items horizontally */
+    margin: 20px; /* Add some margin for spacing */
+}
+
+.leftImage,
+.rightImage {
+    flex-basis: 50%;
+    border-radius: 12px;
+    margin: 10px; /* Add some margin for spacing */
+}
+
+.leftImg,
+.rightImg {
+    max-width: 100%; /* Ensure image doesn't overflow */
+    height: auto; /* Allow image to adjust its height */
+    border-radius: 11px;
+    transition: all 0.3s ease;
+}
+
+.superPowers {
+    padding: 20px; /* Add some padding */
+    background-color: #FFFFFF;
+    text-align: center; /* Center text */
+}
+
+.heading-super {
+    font-size: 3.3rem;
+    margin: 20px;
+    text-align: center;
+}
+.lorem{
+    color: black;
+}
